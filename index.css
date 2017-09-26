@@ -1,0 +1,164 @@
+/*顶部菜单样式开始*/
+.MenuBox {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 999;
+	height: 56px;
+	background: url("common/images/index-header.png") repeat-x;
+}
+
+.Menu {
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 0px;
+}
+
+.Menu .MenuInfo {
+}
+
+.Menu .MenuInfo li {
+	padding: 0px 26px;
+	text-align: center;
+	height: 56px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 56px;
+	color: #ffffff;
+}
+
+.Menu .MenuInfo li a {
+	padding: 5px;
+	color: #fff;
+}
+
+.Menu .MenuInfo li:hover {
+	color: #fff;
+	background: #444444;
+}
+
+.Menu .HomeLogo {
+	cursor: pointer;
+	float: right;
+	width: 120px;
+	height: 120px;
+	border-bottom-left-radius: 56px;
+	border-bottom-right-radius: 56px;
+	background: #503E13;
+	background-image: url("common/images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+}
+/*顶部菜单样式结束*/
+
+/*菜单弹出框样式开始*/
+.SMenu {
+	width: 100%;
+	height: 100%;
+}
+
+.SMenu>li {
+	text-align: center;
+	width: calc(100%/ 3 - 16px);
+	height: calc(100%/ 3 - 16px);
+	display: inline-block;
+	border: 1px solid #a1a1a1;
+	border-radius: 5px;
+	margin: 5px;
+	background: rgba(237, 237, 237, 0.80);
+	font-weight: 500;
+	font-size: 0px;
+	background-size: 56px 56px;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: alpha(opacity = 70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.SMenu .home {
+	background-image: url("../../images//home.png") /*tpa=/images//home.png*/;
+}
+
+.SMenu .news {
+	background-image: url("../../images//news.png") /*tpa=/images//news.png*/;
+}
+
+.SMenu .photos {
+	background-image: url("../../images//picture.png") /*tpa=/images//picture.png*/;
+}
+
+.SMenu .selfinfo {
+	background-image: url("../../images//user.png") /*tpa=/images//user.png*/;
+}
+
+.SMenu .System {
+	background-image: url("../../images//set.png") /*tpa=/images//set.png*/;
+}
+
+.SMenu li a {
+	color: #3071a9;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.SMenu li a:hover {
+	color: #3071a9;
+}
+
+/*菜单弹出框样式结束*/
+
+/*页面iframe框样式开始*/
+.PageFrame {
+	margin-top: 56px;
+	width: 100%;
+	height: calc(100% - 56px);
+	height: -webkit-calc(100% - 56px);
+	height: -moz-calc(100% - 56px);
+}
+
+.PageFrame .indexFrame {
+	width: 100%;
+	height: 100%;
+	height: calc(100% - 56px);
+	height: -webkit-calc(100% - 56px);
+	height: -moz-calc(100% - 56px);
+	position: absolute;
+	z-index: 1;
+	padding: 0px;
+	border: none;
+}
+
+/*页面自适应宽度开始*/
+@media screen and (max-width:1200px) {
+	.Menu {
+		width: 970px;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	.Menu {
+		width: 720px;
+	}
+}
+
+@media screen and (max-width:750px) {
+	.Menu {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.MenuBox {
+		display: none;
+	}
+	.PageFrame {
+		margin-top: 0px;
+		height: 100%;
+	}
+}
+/*页面自适应宽度结束*/
