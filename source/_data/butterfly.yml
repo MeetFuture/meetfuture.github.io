@@ -5,31 +5,29 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  首页: / || fa fa-home
+  文章: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  留言板: /messageboard/ || fa fa-comments
+  友链: /link/ || fa fa-link
+  关于: /about/ || fa fa-heart
 
 # Favicon
 # ---------------
-favicon: /img/favicon.ico
+favicon: /asserts/images/favicon.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 # pwa:
 #   enable: true
-#   manifest: /img/pwa/manifest.json
+#   manifest: /asserts/images/pwa/manifest.json
 #   theme_color: "#fff"
-#   apple_touch_icon: /img/pwa/apple-touch-icon.png
-#   favicon_32_32: /img/pwa/32.png
-#   favicon_16_16: /img/pwa/16.png
-#   mask_icon: /img/pwa/safari-pinned-tab.svg
+#   apple_touch_icon: /asserts/images/pwa/apple-touch-icon.png
+#   favicon_32_32: /asserts/images/pwa/32.png
+#   favicon_16_16: /asserts/images/pwa/16.png
+#   mask_icon: /asserts/images/pwa/safari-pinned-tab.svg
 
 # Highlight theme
 # ---------------
@@ -52,9 +50,9 @@ copy:
 #   icon: link
 # ---------------
 social:
-  fa fa-github: https://github.com/jerryc127
-  fa fa-envelope: mailto:xxxxxxxx@gmail.com
-  fa fa-rss: /atom.xml
+  fa fa-github: https://github.com/MeetFuture/
+  fa fa-envelope: mailto:617288330@qq.com
+  fa fa-phone: tel:15017575121
 
 ####    search    ####
 # Algolia search
@@ -73,10 +71,10 @@ algolia_search:
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    input_placeholder: 查找文章
+    hits_empty: "很抱歉，没有找到与: ${query} 相关的结果!" # if there are no result
 
 # MathJax
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#MathJax
@@ -98,34 +96,27 @@ katex:
 
 # Post info settings
 # ---------------
-avatar: /img/avatar.png
+avatar: /asserts/images/avatar.png
 
 # the banner image of index
-index_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+index_img: /asserts/images/index/index.jpg
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+default_top_img: /asserts/images/index/index.jpg
 
 # the default cover of the post
-default_cover: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
+default_cover: /asserts/images/top/default.png
 
 # the banner image of archive page
-archive_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/archive.jpg
+archive_img: /asserts/images/top/archive.jpg
 
-# the banner image of tag page
-tag_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/tag.png
 
-# the banner image of category page
-category_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/category.jpg
-
-# 如果你有使用hexo-douban去生成movie界面，可配置這個
-movies_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/movie.jpg
 
 # if the photo link cannot connect,it will show that
 lodding_bg:
-  flink: /img/friend_404.gif #404后圖片
-  post_page: /img/404.jpg #404后圖片
-#  post: /img/loading.gif ##加載動畫
+  flink: /asserts/images/friend_404.gif #404后圖片
+  post_page: /asserts/images/404.png #404后圖片
+  post: /asserts/images/loading.gif #加載動畫
 
 post_meta:
   date_type: both # or created or updated 文章日期是创建日或者更新日或都显示
@@ -146,8 +137,8 @@ auto_open_sidebar:
 
 post_copyright:
   enable: true
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license: MIT
+  license_url: https://choosealicense.com/licenses/mit/
 
 # 自動節選
 auto_excerpt:
@@ -213,18 +204,18 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: eB1xfkTiz20LUrm1S00cPjJ2-gzGzoHsz #leancloud application app id
+  appKey: 1LzWCfE1Bkk8VUPlRK2PGGMy #leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
-  pageSize: 10 # comment list page size
-  avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-cn/en
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
-  bg: /img/comment_bg.png # valine background
-  count: false # top_img顯示評論數
+  pageSize: 50 # comment list page size
+  avatar: robohash # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: 想说点什么 # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail #,link  --valine comment header info
+  #bg: /asserts/images/comment.jpg # valine background
+  count: true # top_img顯示評論數
 
 #####     Footer Settings    ####
 # ------------------------------------
@@ -236,10 +227,10 @@ footer_copyright:
   enable: true
 
 ICP:
-  enable: false
-  url:
-  text:
-  icon: /img/icp.png
+  enable: true
+  url: http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action
+  text: 粤ICP备17038302号-1
+  icon: /asserts/images/icp.png
 
 ####   Analysis    ####
 # ---------------
@@ -279,23 +270,29 @@ qihu_site_verification:
 
 # 友情鏈接界面設置
 Flink:
-  headline: 友情鏈接
-  info_headline: 我的Blog資料
-  name: Blog 名字： JerryC
-  address: Blog 地址： https://jerryc.me/
-  avatar: Blog 頭像： https://jerryc.me/img/avatar.png
-  info: Blog 簡介： 今日事,今日畢
-  comment: 如果需要交換友鏈,請留言
+  headline: 友情链接
+  info_headline: 我的资料
+  name: 名字： Tom
+  address: Blog： http://meetfuture.site/
+
+#  Flink:
+#    headline: 友情链接
+#    info_headline: 我的资料
+#    name: 名字： Tom
+#    address: 地址： https://jerryc.me/
+#    avatar: Blog 头像： https://jerryc.me/asserts/images/avatar.png
+#    info: Blog 简介： 今日事,今日毕
+#    comment: 如果需要交换友链,请留言
 
 # 打賞按鈕
 reward:
-  enable: true
+  enable: false
   QR_code:
     - itemlist:
-        img: /img/wechat.jpg
+        img: /asserts/images/wechat.jpg
         text: 微信
     - itemlist:
-        img: /img/alipay.jpg
+        img: /asserts/images/alipay.jpg
         text: 支付寶
 
 # 推薦文章
@@ -330,7 +327,7 @@ index_top_img_height: #主頁top_img高度 例如 300px/300em/300rem  不能使�
 # 主頁文章COVER顯示位置
 # 三個值可配置 left , right , both
 # left(全部圖片顯示在左邊)，right(全部圖片顯示在右邊)，both(左右左右順序顯示)
-index_post_cover: both
+index_post_cover: left
 
 # category和tag頁的UI設置
 # index 值代表 UI將與首頁的UI一樣
@@ -343,7 +340,7 @@ tag_ui: # 留空或index
 # 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
 # 顔色 background: '#49B202'
 # 留空 顯示白色
-background:
+background: '#C7EDCC'
 
 # footer是否顯示圖片背景(與top_img一致)
 footer_bg: false
@@ -389,7 +386,7 @@ fireworks:
 
 # 點擊出現愛心
 click_heart:
-  enable: false
+  enable: true
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
@@ -419,7 +416,7 @@ display_mode: light
 
 # 美化post頁顯示
 post_beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: "#F47466"
 
@@ -446,17 +443,17 @@ hr:
 subtitle:
   enable: true
   # source調用第三方服務
-  # source: false 關閉調用
-  # source: 1  調用金山詞霸的每日一句（簡體）
-  # source: 2  調用一言网的一句話（簡體） #https://hitokoto.cn/
-  # source: 3  調用一句网（簡體） http://yijuzhan.com/
+  # source: false #關閉調用
+  # source: 1  #調用金山詞霸的每日一句（簡體）
+  # source: 2 # 調用一言网的一句話（簡體） #https://hitokoto.cn/
+  # source: 3  #調用一句网（簡體） http://yijuzhan.com/
   source: 4 #調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的内容
   #source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
-  sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+  # sub:
+   # - 今日事&#44;今日畢
+   #- Never put off till tomorrow what you can do today
 
 ####    側邊欄    ####
 #-------------------------------------
@@ -465,7 +462,7 @@ aside_mobile: true
 
 # 側邊欄顯示設置
 aside:
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement: true
   card_recent_post: true
@@ -476,7 +473,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 感謝訪問本站，若喜歡請收藏 ^_^
+  content: System.out.println("Hello World !");  #感謝訪問本站，若喜歡請收藏 ^_^
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -490,7 +487,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 2/2/2020 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -498,7 +495,7 @@ runtimeshow:
 translate:
   enable: true
   # 默認按鈕顯示文字
-  default: 繁
+  default: 简
   #网站默认语言，1: 繁體中文, 2: 简体中文
   defaultEncoding: 2
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
@@ -519,10 +516,10 @@ darkmode:
   enable: true
 
 # 自動切換 dark mode和 light mode
-# autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
+autoChangeMode: 1  #跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
 # autoChangeMode: 2  只按照時間晚上6點到早上6點之間切換為 dark mode
 # autoChangeMode: false 取消自動切換
-autoChangeMode: false
+#autoChangeMode: false
 
 ####    other     ####
 #------------------------------------------------
@@ -598,6 +595,7 @@ Open_Graph_meta: true
 CDN_USE:
   css:
     - /css/index.css
+    - /asserts/css/common.css
     - https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
     # - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css #fontawesomeV5_css
 
