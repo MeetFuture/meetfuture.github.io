@@ -6,7 +6,8 @@ tags:
 categories: Linux
 abbrlink: 9b9da0c4
 date: 2020-03-07 22:05:25
-top_img: 
+top_img: /asserts/images/202003/2020-03-11_215508.png
+cover: /asserts/images/202003/2020-03-11_215508.png
 keywords:
 description:
 mathjax:

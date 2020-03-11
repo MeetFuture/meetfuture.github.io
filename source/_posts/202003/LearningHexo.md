@@ -5,7 +5,8 @@ tags:
  - markdown
  
 categories: Hexo
-top_img: 
+top_img: /asserts/images/202003/2020-03-11_215625.png
+cover: /asserts/images/202003/2020-03-11_215625.png
 abbrlink: 2e10121f
 date: 2020-03-07 11:05:25
 keywords:
