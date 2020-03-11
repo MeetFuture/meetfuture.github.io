@@ -25,6 +25,7 @@ hide:
 1. 使用 hexo-abbrlink 修改文章的链接地址 :abbrlink
 1. 使用 hexo-generator-search 提供本地搜索功能
 1. 使用 hexo-renderer-markdown-it 替换原有的 markdown 功能
+1. 使用 hexo-asset-image 图片插件
 
 
 

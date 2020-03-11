@@ -1,11 +1,22 @@
 ---
-title: 'Java常用技术心得'
-top_img: 
+title: Java常用技术
 copyright: false
-date: 2020-03-11 21:22:54
-tags: Java
+tags: 
+ - Java
+ - Java基础
+ - 数据库
+ - web容器
+ - 中间件
+ - 系统架构
+ - 项目管理
+ - 运维
+ - 个人成长
+ - 常用三方工具包
 categories: Java
 keywords: Java常用技术心得
+abbrlink: efde5af
+date: 2020-03-11 21:22:54
+top_img: /asserts/images/202003/2020-03-11_213758.png
 description:
 ---
 

@@ -15,7 +15,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /asserts/images/favicon.ico
+favicon: /asserts/images/common/favicon.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -96,7 +96,7 @@ katex:
 
 # Post info settings
 # ---------------
-avatar: /asserts/images/avatar.png
+avatar: /asserts/images/common/avatar.png
 
 # the banner image of index
 index_img: /asserts/images/index/index.jpg
@@ -114,9 +114,9 @@ archive_img: /asserts/images/top/archive.jpg
 
 # if the photo link cannot connect,it will show that
 lodding_bg:
-  flink: /asserts/images/friend_404.gif #404后圖片
-  post_page: /asserts/images/404.png #404后圖片
-  post: /asserts/images/loading.gif #加載動畫
+  flink: /asserts/images/common/friend_404.gif #404后圖片
+  post_page: /asserts/images/common/404.png #404后圖片
+  post: /asserts/images/common/loading.gif #加載動畫
 
 post_meta:
   date_type: both # or created or updated 文章日期是创建日或者更新日或都显示
@@ -230,7 +230,7 @@ ICP:
   enable: true
   url: http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action
   text: 粤ICP备17038302号-1
-  icon: /asserts/images/icp.png
+  icon: /asserts/images/common/icp.png
 
 ####   Analysis    ####
 # ---------------
@@ -289,10 +289,10 @@ reward:
   enable: false
   QR_code:
     - itemlist:
-        img: /asserts/images/wechat.jpg
+        img: /asserts/images/common/wechat.jpg
         text: 微信
     - itemlist:
-        img: /asserts/images/alipay.jpg
+        img: /asserts/images/common/alipay.jpg
         text: 支付寶
 
 # 推薦文章
