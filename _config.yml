@@ -75,7 +75,17 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+
 tag_map:
+  Java基础: java-base
+  web容器: web-container
+  个人成长: personal
+  中间件: middleware
+  常用三方工具包: third-package
+  数据库: database
+  系统架构: architecture
+  运维: operations
+  项目管理: pm
 
 # search
 search:

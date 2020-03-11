@@ -19,16 +19,19 @@ hide:
 
 # Hexo 使用说明 
 
+## Hexo三连
+```batch
+hexo clean && hexo g && hexo d
+```
+
 ## Hexo的个人设置
 
 1. [Butterfly主题](https://jerryc.me/posts/21cfbf15/) [配置优化](https://www.lucfzy.com/2020/02/butterfly-theme/)
-1. 使用 hexo-deployer-git 发布到Github上
-1. 使用 hexo-abbrlink 修改文章的链接地址 :abbrlink
-1. 使用 hexo-generator-search 提供本地搜索功能
-1. 使用 hexo-renderer-markdown-it 替换原有的 markdown 功能
-1. 使用 hexo-asset-image 图片插件
-
-
+1. hexo-deployer-git 发布到Github上
+1. hexo-abbrlink 修改文章的链接地址 :abbrlink
+1. hexo-generator-search 提供本地搜索功能
+1. hexo-renderer-markdown-it 替换原有的 markdown 功能
+1. hexo-asset-image 图片插件
 
 ## 新建
 ### 新建文章 
@@ -61,10 +64,6 @@ hexo deploy
 ```
 部署网站。
 
-### Hexo三连
-```batch
-hexo clean && hexo g && hexo d
-```
 
 # MarkDown 语法
 

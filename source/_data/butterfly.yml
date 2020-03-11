@@ -273,7 +273,9 @@ Flink:
   headline: 友情链接
   info_headline: 我的资料
   name: 名字： Tom
-  address: Blog： http://meetfuture.site/
+  address: Blog： http://www.meetfuture.site/
+  info: Blog 简介： 三人行，必有我师焉。
+  comment: 如果需要交换友链,请留言
 
 #  Flink:
 #    headline: 友情链接
