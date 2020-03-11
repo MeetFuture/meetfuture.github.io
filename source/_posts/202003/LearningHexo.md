@@ -20,7 +20,7 @@ hide:
 
 ## Hexo的个人设置
 
-1. Butterfly 主题
+1. [Butterfly主题](https://jerryc.me/posts/21cfbf15/) [配置优化](https://www.lucfzy.com/2020/02/butterfly-theme/)
 1. 使用 hexo-deployer-git 发布到Github上
 1. 使用 hexo-abbrlink 修改文章的链接地址 :abbrlink
 1. 使用 hexo-generator-search 提供本地搜索功能
