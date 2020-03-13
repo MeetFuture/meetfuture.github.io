@@ -600,6 +600,7 @@ CDN_USE:
     - /css/index.css
     - /asserts/css/common.css
     - /asserts/css/snow.css
+    - /asserts/css/archives.css
     - https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
     # - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css #fontawesomeV5_css
 
@@ -608,6 +609,7 @@ CDN_USE:
     - /js/utils.js
     - /js/main.js
     - /asserts/js/snow.js
+    - /asserts/js/archives.js
 
 # CDN
 # 非必要不要修改
