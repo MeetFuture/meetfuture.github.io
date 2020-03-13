@@ -1,7 +1,8 @@
 $(function () {
     let isPage = '时间轴' === $(".blogtitle").text().trim();
-    if (isPage) {
-        let html = `<div class='site-banner-bg' style='background-color: #181818;'>
+    let isNotMobile = !isMobile();
+    if (isPage && isNotMobile) {
+        let html = `<div class='banner-orbit' >
                         <ul class='wrapper'>
                             <div class='sun'>
                                 <div class='star'></div>
