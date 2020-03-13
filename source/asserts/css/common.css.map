@@ -1,1 +1,7 @@
-{"version":3,"sources":["common.less"],"names":[],"mappings":"AAMA,OACE,aACE;EACE,aAAA","file":"common.css"}
+{
+"version": 3,
+"mappings": "AAOI,oCAAgB;EACd,OAAO,EAAE,IAAI",
+"sources": ["common.scss"],
+"names": [],
+"file": "common.css"
+}

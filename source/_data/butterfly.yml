@@ -599,6 +599,7 @@ CDN_USE:
   css:
     - /css/index.css
     - /asserts/css/common.css
+    - /asserts/css/snow.css
     - https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
     # - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css #fontawesomeV5_css
 
@@ -606,6 +607,7 @@ CDN_USE:
     - https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js #/js/third-party/jquery.min.js
     - /js/utils.js
     - /js/main.js
+    - /asserts/js/snow.js
 
 # CDN
 # 非必要不要修改
