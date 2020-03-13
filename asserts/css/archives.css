@@ -117,8 +117,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-position: center 0;
-  background-color: #333333; }
+  background-position: center 0; }
   .banner-orbit > .wrapper {
     position: relative;
     margin: 0 auto;
@@ -129,26 +128,11 @@
     perspective-origin: 60% 50%;
     transform: rotate(-8deg); }
     .banner-orbit > .wrapper > div {
-      position: relative;
       margin: 0 auto;
       transform-style: preserve-3d;
       -webkit-transform-style: preserve-3d;
       /* Safari and Chrome */
       height: 0px; }
-    .banner-orbit > .wrapper .sun {
-      width: 250px;
-      position: absolute;
-      top: 0px;
-      z-index: 1;
-      height: 125px !important; }
-      .banner-orbit > .wrapper .sun .star {
-        width: 250px;
-        height: 250px;
-        background: url(../images/archives/sun.png) no-repeat;
-        background-size: cover;
-        border-radius: 250px;
-        margin: 0 auto;
-        animation: spinsun 40s infinite linear; }
     .banner-orbit > .wrapper .planet {
       background-size: cover;
       background-repeat: no-repeat;
@@ -164,8 +148,22 @@
       background: transparent url(../images/archives/shadow.png) 0% 0% no-repeat;
       background-size: cover;
       border-radius: 100%; }
+    .banner-orbit > .wrapper .sun {
+      position: relative;
+      width: 250px;
+      top: 0px;
+      z-index: 1;
+      height: 125px !important; }
+      .banner-orbit > .wrapper .sun .star {
+        width: 250px;
+        height: 250px;
+        background: url(../images/archives/sun.png) no-repeat;
+        background-size: cover;
+        border-radius: 250px;
+        margin: 0 auto;
+        animation: spinsun 40s infinite linear; }
     .banner-orbit > .wrapper .mercury {
-      position: absolute;
+      position: relative;
       width: 400px;
       z-index: 2;
       animation: orbitmercury 12s infinite linear;
@@ -179,7 +177,7 @@
       .banner-orbit > .wrapper .mercury .shadow {
         animation: shadow 12s infinite linear; }
     .banner-orbit > .wrapper .venus {
-      position: absolute;
+      position: relative;
       width: 506px;
       z-index: 3;
       animation: orbitvenus 15s infinite linear;
@@ -192,7 +190,7 @@
       .banner-orbit > .wrapper .venus .shadow {
         animation: shadow 15s infinite linear; }
     .banner-orbit > .wrapper .earth {
-      position: absolute;
+      position: relative;
       width: 610px;
       z-index: 4;
       animation: orbitearth 20s infinite linear;
@@ -205,7 +203,7 @@
       .banner-orbit > .wrapper .earth .shadow {
         animation: shadow 20s infinite linear; }
     .banner-orbit > .wrapper .mars {
-      position: absolute;
+      position: relative;
       width: 706px;
       z-index: 5;
       animation: orbitmars 30s infinite linear;
@@ -218,7 +216,7 @@
       .banner-orbit > .wrapper .mars .shadow {
         animation: shadow 30s infinite linear; }
     .banner-orbit > .wrapper .jupiter {
-      position: absolute;
+      position: relative;
       width: 1100px;
       z-index: 6;
       animation: orbitjupiter 50s infinite linear;
