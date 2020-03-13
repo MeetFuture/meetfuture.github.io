@@ -166,7 +166,7 @@
 
 
 /* scene wrapper */
-#page_site-info {
+#site-info {
   /* 比 星体的高 */
   z-index: 3;
 }
@@ -179,17 +179,17 @@
   width: 100%;
   height: 100%;
   background-position: center 0;
+  padding-right: 60px;
   //background-color: #333333;
 
   > .wrapper {
     position: relative;
-    margin: 0 auto;
+    margin: 200px auto 0 auto;
     display: block;
-    margin-top: 62px;
     width: inherit;
     perspective: 1000px;
     perspective-origin: 60% 50%;
-    transform: rotate(-8deg);
+    transform: rotate(-12deg);
 
     > div {
       margin: 0 auto;

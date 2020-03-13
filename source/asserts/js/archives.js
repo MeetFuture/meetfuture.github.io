@@ -1,7 +1,7 @@
 $(function () {
-    let isPage = '时间轴' === $(".blogtitle").text().trim();
+    let isMain = $("#body-wrap .full_page .blogtitle").text().trim();
     let isNotMobile = !isMobile();
-    if (isPage && isNotMobile) {
+    if (isMain && isNotMobile) {
         let html = `<div class='banner-orbit' >
                         <ul class='wrapper'>
                             <div class='sun'>
@@ -34,6 +34,6 @@ $(function () {
                             </div>
                         </ul>
                     </div>`;
-        $('.not_index_bg').append(html);
+        $('#body-wrap .full_page').append(html);
     }
 });
