@@ -9,6 +9,7 @@
 
 .site-banner-bg {
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -146,7 +147,7 @@
 @keyframes orbitjupiter {
   0% {
     z-index: 6;
-    transform: rotateY(270deg);
+    transform: rotateY(0deg);
   }
   49% {
     z-index: 6;
@@ -166,7 +167,7 @@
 @keyframes orbitsaturn {
   0% {
     z-index: 7;
-    transform: rotateY(270deg);
+    transform: rotateY(0deg);
   }
   49% {
     z-index: 7;
@@ -213,7 +214,6 @@
   perspective: 1000px;
   perspective-origin: 60% 50%;
   transform: rotate(-10deg);
-
 }
 
 .wrapper > div {

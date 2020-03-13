@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* 棣栭〉banner閮ㄥ垎 */
+/* 首页banner部分 */
 .site-banner {
   position: relative;
   height: 600px;
@@ -9,6 +9,7 @@
 
 .site-banner-bg {
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -97,7 +98,7 @@
 @keyframes orbitjupiter {
   0% {
     z-index: 6;
-    transform: rotateY(270deg); }
+    transform: rotateY(0deg); }
   49% {
     z-index: 6; }
   50% {
@@ -110,7 +111,7 @@
 @keyframes orbitsaturn {
   0% {
     z-index: 7;
-    transform: rotateY(270deg); }
+    transform: rotateY(0deg); }
   49% {
     z-index: 7; }
   50% {
