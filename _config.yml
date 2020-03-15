@@ -76,6 +76,7 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  说话技巧: talkskill
 
 tag_map:
   Java基础: java-base
@@ -87,6 +88,8 @@ tag_map:
   系统架构: architecture
   运维: operations
   项目管理: pm
+  鬼谷子: guiguzi
+  说话技巧: talkskill
 
 # search
 search:

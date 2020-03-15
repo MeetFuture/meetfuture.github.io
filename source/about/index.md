@@ -7,3 +7,6 @@ top_img: /asserts/images/top/about.jpg
 mathjax:
 katex:
 ---
+
+
+1. 生如蝼蚁当立鸿鹄之志，命薄似纸应有不屈之心
