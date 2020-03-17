@@ -78,6 +78,8 @@ default_category: uncategorized
 category_map:
   说话技巧: talkskill
   鬼谷子: guiguzi
+  老子: laozi
+  庄子: zhuangzi
 
 tag_map:
   Java基础: java-base
@@ -90,7 +92,10 @@ tag_map:
   运维: operations
   项目管理: pm
   鬼谷子: guiguzi
+  老子: laozi
+  庄子: zhuangzi
   说话技巧: talkskill
+  名句: mingju
 
 # search
 search:
