@@ -32,8 +32,30 @@ $(function () {
                                     <div class='shadow'></div>
                                 </div>
                             </div>
+                            <div class='saturn'>
+                                <div class='planet'>
+                                    <div class='shadow'></div>
+                                </div>
+                            </div>
+                            <div class='uranus'>
+                                <div class='planet'>
+                                    <div class='shadow'></div>
+                                </div>
+                            </div>
+                            <div class='neptune'>
+                                <div class='planet'>
+                                    <div class='shadow'></div>
+                                </div>
+                            </div>
                         </ul>
                     </div>`;
         $('#body-wrap .full_page').append(html);
+        $('.banner-orbit').click(function () {
+            if ($(this).hasClass('orbit-name')) {
+                $(this).removeClass('orbit-name');
+            } else {
+                $(this).addClass('orbit-name');
+            }
+        })
     }
 });

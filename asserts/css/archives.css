@@ -93,6 +93,32 @@
   100% {
     z-index: 7;
     transform: rotateY(360deg); } }
+@keyframes orbituranus {
+  0% {
+    z-index: 8;
+    transform: rotateY(0deg); }
+  49% {
+    z-index: 8; }
+  50% {
+    z-index: -8; }
+  99% {
+    z-index: -8; }
+  100% {
+    z-index: 8;
+    transform: rotateY(360deg); } }
+@keyframes orbitneptune {
+  0% {
+    z-index: 9;
+    transform: rotateY(0deg); }
+  49% {
+    z-index: 9; }
+  50% {
+    z-index: -9; }
+  99% {
+    z-index: -9; }
+  100% {
+    z-index: 9;
+    transform: rotateY(360deg); } }
 /* Keep planet image flat */
 @keyframes anti-spin {
   from {
@@ -161,7 +187,7 @@
         background-size: cover;
         border-radius: 250px;
         margin: 0 auto;
-        animation: spinsun 40s infinite linear; }
+        animation: spinsun 120s infinite linear; }
     .banner-orbit > .wrapper .mercury {
       position: relative;
       width: 400px;
@@ -217,7 +243,7 @@
         animation: shadow 30s infinite linear; }
     .banner-orbit > .wrapper .jupiter {
       position: relative;
-      width: 1100px;
+      width: 1000px;
       z-index: 6;
       animation: orbitjupiter 50s infinite linear;
       top: -64px; }
@@ -228,5 +254,98 @@
         animation: anti-spin 50s infinite linear; }
       .banner-orbit > .wrapper .jupiter .shadow {
         animation: shadow 50s infinite linear; }
+    .banner-orbit > .wrapper .saturn {
+      position: relative;
+      width: 1200px;
+      z-index: 7;
+      animation: orbitsaturn 60s infinite linear;
+      top: -28px; }
+      .banner-orbit > .wrapper .saturn .planet {
+        width: 128px;
+        height: 56px;
+        background-image: url(../images/archives/saturn.png);
+        background-position: center center;
+        background-size: cover;
+        animation: anti-spin 60s infinite linear; }
+      .banner-orbit > .wrapper .saturn .shadow {
+        animation: shadow 60s infinite linear;
+        left: 34px;
+        top: 0px;
+        width: 58px;
+        height: 54px; }
+    .banner-orbit > .wrapper .uranus {
+      position: relative;
+      width: 1400px;
+      z-index: 8;
+      animation: orbitsaturn 70s infinite linear;
+      top: -20px; }
+      .banner-orbit > .wrapper .uranus .planet {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/archives/uranus.png);
+        background-position: center center;
+        background-size: cover;
+        animation: anti-spin 70s infinite linear; }
+      .banner-orbit > .wrapper .uranus .shadow {
+        animation: shadow 70s infinite linear; }
+    .banner-orbit > .wrapper .neptune {
+      position: relative;
+      width: 1600px;
+      z-index: 9;
+      animation: orbitsaturn 80s infinite linear;
+      top: -28px; }
+      .banner-orbit > .wrapper .neptune .planet {
+        width: 56px;
+        height: 56px;
+        background-image: url(../images/archives/neptune.png);
+        background-position: center center;
+        background-size: cover;
+        animation: anti-spin 80s infinite linear; }
+      .banner-orbit > .wrapper .neptune .shadow {
+        animation: shadow 80s infinite linear; }
+
+.orbit-name .planet:after {
+  display: block;
+  transform: rotate(12deg);
+  color: white;
+  font-size: 20px;
+  font-family: cursive; }
+.orbit-name .mercury .planet:after {
+  content: '水';
+  padding-left: 1px;
+  padding-top: 0px;
+  font-size: 8px; }
+.orbit-name .venus .planet:after {
+  content: '金';
+  padding-left: 8px;
+  padding-top: 6px; }
+.orbit-name .mars .planet:after {
+  content: '火';
+  padding-left: 5px;
+  padding-top: 2px;
+  font-size: 10px; }
+.orbit-name .earth .planet:after {
+  content: '地球';
+  padding-left: 9px;
+  padding-top: 16px;
+  font-size: 10px; }
+.orbit-name .jupiter .planet:after {
+  content: '木';
+  padding-left: 56px;
+  padding-top: 82px; }
+.orbit-name .saturn .planet:after {
+  content: '土';
+  padding-left: 55px;
+  padding-top: 18px; }
+.orbit-name .uranus .planet:after {
+  content: '天王星';
+  padding-left: 0;
+  padding-top: 10px;
+  font-size: 10px; }
+.orbit-name .neptune .planet:after {
+  content: '海王星';
+  padding-left: 11px;
+  padding-top: 24px;
+  font-size: 12px; }
 
 /*# sourceMappingURL=archives.css.map */
