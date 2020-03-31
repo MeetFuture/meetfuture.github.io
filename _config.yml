@@ -16,7 +16,7 @@ timezone: 'Asia/Shanghai'
 url: http://www.meetfuture.site
 root: /
 #permalink: :year/:month/:day/:title/
-permalink: article/:year:month/:abbrlink/
+permalink: article/:abbrlink/
 #abbrlink配置
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
@@ -80,6 +80,7 @@ category_map:
   鬼谷子: guiguzi
   老子: laozi
   庄子: zhuangzi
+  科技趋势: technology-trend
 
 tag_map:
   Java基础: java-base
@@ -96,6 +97,8 @@ tag_map:
   庄子: zhuangzi
   说话技巧: talkskill
   名句: mingju
+  科技趋势: technology-trend
+  达摩院: damo-academy
 
 # search
 search:
