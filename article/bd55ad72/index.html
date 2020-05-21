@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>关于‘空间’的遐想 | 遇见未来</title><meta name="description" content="关于‘空间’的遐想"><meta name="author" content="Tom"><meta name="copyright" content="Tom"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/asserts/images/common/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="关于‘空间’的遐想"><meta name="twitter:description" content="关于‘空间’的遐想"><meta name="twitter:image" content="http://www.meetfuture.site/asserts/images/top/default.png"><meta property="og:type" content="article"><meta property="og:title" content="关于‘空间’的遐想"><meta property="og:url" content="http://www.meetfuture.site/article/bd55ad72/"><meta property="og:site_name" content="遇见未来"><meta property="og:description" content="关于‘空间’的遐想"><meta property="og:image" content="http://www.meetfuture.site/asserts/images/top/default.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/asserts/css/common.css"><link rel="stylesheet" href="/asserts/css/snow.css"><link rel="stylesheet" href="/asserts/css/archives.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://www.meetfuture.site/article/bd55ad72/"><link rel="prev" title="关于外星人的几个常见问题" href="http://www.meetfuture.site/article/61cabc4b/"><link rel="next" title="关于‘时间’的一些理解" href="http://www.meetfuture.site/article/7df4f12f/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">遇见未来</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/asserts/images/common/avatar.png" onerror="onerror=null;src='/asserts/images/common/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">21</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(/asserts/images/top/default.png)"><div id="post-info"><div id="post-title"><div class="posttitle">关于‘空间’的遐想</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-04-08<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-04-08</time><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/article/bd55ad72/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/article/bd55ad72/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><p>一直以来，一个问题始终萦绕在我的脑海，我们的宇宙之外是什么？</p>
+<p>我们很容易理解，一个物体之外是什么，比如：一个水杯，里面是水，外面是空气。一个盒子，外面同样也是装满某种物质的空间。这里的空间是能直观感受到的。<br>
+那么，我们所能观测到的宇宙这个盒子，外面又会是什么呢？ 外面的外面呢？<br>
+或许，本宇宙外一片混沌；可是混沌又是什么。<br>
+或许，本宇宙的外面同样有无穷个宇宙；可是无穷个宇宙之外又是什么。<br>
+无穷尽也！</p>
+<p>宇宙和其雄伟</p>
+<p>以下是知乎的高赞答案：</p>
+<p>作者：汪有<br>
+链接：<a href="https://www.zhihu.com/question/26952218/answer/36730811" target="_blank" rel="noopener">https://www.zhihu.com/question/26952218/answer/36730811</a><br>
+来源：知乎<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>宇宙没有外<br>
+宇宙有外<br>
+宇宙外面有什么，我们不知道<br>
+宇宙外面有什么，我们可以猜</p>
+<p>最有意思的是，这四个答案，从不同的角度来看，都对。<br>
+恩，接下来会用到些高维空间的知识，我就尽量说的简单点吧，一个一个来：</p>
+<ol>
+<li>宇宙没有外</li>
+</ol>
+<p>宇宙的大小是有限的，但是没有边界，也就没有外。<br>
+很多人问：“我一直往一个方向一直走一直走，走到一个地方走不下去了，不就是有边界了嘛？” “我往宇宙外面扔一个球，如果被弹回来了，不就是宇宙的边界嘛？”<br>
+没错，你不会走到尽头发现一堵墙写着“禁止通行”，也不会被宇宙边界弹回的球砸到脑袋。宇宙确实没有这样的边界。但这并不代表宇宙是无限的。<br>
+为了理解我们的三维宇宙，就先降维到二维世界去看看吧。举第一个关于二维世界的例子，我们的地球。<br>
+<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="343" data-rawheight="336" class="content_image lazyload" width="343" data-src="https://pic2.zhimg.com/50/4c1b0588e9e4b85f1a555a57085e0358_hd.jpg" src="/asserts/images/common/loading.gif"></a><br>
+地球的表面是一个球体曲面，不考虑人类的飞行器飞离地球，人类生活的领域无非上至平流层的飞机，下至地壳表面的矿井深处。与整个地球的尺度比起来，我们相当于只是生活在地球二维表面的生物。<br>
+在这样一个二维表面上，地球有边界么？——没有，你可以沿着经纬线一路走下去，不会有把你拦在外面的尽头。<br>
+在这样的一个二维表面上，地球的面积是有限的么？——有的，大概是5.1亿平方公里。所以，二维地球表面是大小有限且没有边界的。</p>
+<p>我们的三维宇宙，也是如此。在地球上的小尺度范围内，你站在广袤的平原上，认为地是平的。可从太空俯瞰地球的话，其实地面是弯曲的。你沿着一个方向走下去，会绕地球一圈走回原地。在我们的宇宙里，你以为从一点到另一点是直的，但大尺度范围来看，其实空间也是弯曲的。你拿着激光笔往远方直射，光线不会射到宇宙的壁上，而是会绕了一个大圈照到你的后脑勺。（如果你能等足够久的话）你以为他是直的，其实他是弯的。<br>
+在二维地球面上，不存在“外”。中国有外，你越过国境往北会去到蒙古。亚洲有外，往西翻越乌拉尔山会去到欧洲。但地球表面没有外，因为没有“边界”。在三维宇宙里，也不存在“外”。“楚门的世界”有外，《楚门的世界》男主活在一个被创造的世界里，他划船远航，终于撞到了他那虚拟世界的边缘。太阳系有外，旅行者号假以时日，穿越过太阳系边缘的奥尔特云，就可以离开太阳系。整个宇宙没有外，刚才说了，没有“边界”。<br>
+<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="880" data-rawheight="495" class="origin_image zh-lightbox-thumb lazyload" width="880" data-original="https://pic4.zhimg.com/49f18fa4ad0c40d0f323ffff01ddb450_r.jpg" data-src="https://pic4.zhimg.com/50/49f18fa4ad0c40d0f323ffff01ddb450_hd.jpg" src="/asserts/images/common/loading.gif"></a><br>
+《楚门的世界》剧照，男主划船出海，撞到了世界的边缘。</p>
+<p>当然，没有”边界“，不代表它”大的没有边了“，一个没有边界的空间，也可以很小。比如一个乒乓球的二维表面，没有边界，但表面积就小的可怜。比如我们的宇宙也曾小过，我们的宇宙诞生于138亿年前的宇宙大爆炸，在大爆炸的起点（称之为Time 0），宇宙密度为无限大，所有的物质挤在一个体积为0的小空间里，然后迅速爆炸，过了138亿年，形成了现在我们看到的宇宙。可在刚刚爆发的一瞬，其实宇宙有一刻和一个苹果一样大，甚至可以放到你现在的手心里。乒乓球的二维表面是有限面积的，宇宙的三维空间是有限体积的（体积多大？现在我们也不太确定）。<br>
+<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="500" data-rawheight="301" class="origin_image zh-lightbox-thumb lazyload" width="500" data-original="https://pic2.zhimg.com/999dd4d8497c5b6bf4dec6689b8afe01_r.jpg" data-src="https://pic2.zhimg.com/50/999dd4d8497c5b6bf4dec6689b8afe01_hd.jpg" src="/asserts/images/common/loading.gif"></a><br>
+宇宙大爆炸时间演进图，在时间0点附近，宇宙小的可以放在你的手心里。<br>
+第一部分完毕，宇宙没有外，但它有限。</p>
+<ol start="2">
+<li>宇宙有外</li>
+</ol>
+<p>这时候一定有读者要问，你说二维地球表面没有外，但旅行者号不是离开地球了么？再看下面这张地球的图，B和C都在地球表面，但A不是在外面了么？A是不是地球的外面？对于宇宙来说，有没有这样的点A？答案是，没错，在更高维度上，宇宙其实也有外面，但这个“外面”，跟我们平时了解的“外面”不一样。<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="343" data-rawheight="336" class="content_image lazyload" width="343" data-src="https://pic1.zhimg.com/50/8be26242287c873f0e14ee37abcd56e1_hd.jpg" src="/asserts/images/common/loading.gif"></a>A点确实在地球表面二维空间的“外面”，但这是升了一个维度，从二维球面来到了三维空间。那么如果我们在三维空间升一个维度，进入四维空间，那么，宇宙也存在这样的A点，宇宙有外。但是，如果是只生活在地球二维球面，不懂什么是三维空间的二维生物，不会理解A点的存在。同样，对于我们这些生活在三维空间里的人类，也不会找到宇宙四维空间以外的A点。为什么说所谓的“外面”，和我们平时说的“外面”不一样？因为任何高维到低维的降维，都会将大量的信息压缩在一个狭窄的空间里。比如，用铅笔在纸上划一道，你得到了一条线——这是一维。用显微镜观察，你会发现这条线是有宽度的——这是二维。镜头再拉近，你会发现一颗颗石墨颗粒粘在纸上——这是三维。镜头从近到远，从三维回到二维再回到一维，降维了，相当于把一颗颗石墨颗粒复杂的三维空间信息挤压进了狭小的一维的一条线。信息量可大了！<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="343" data-rawheight="336" class="content_image lazyload" width="343" data-src="https://pic1.zhimg.com/50/8be26242287c873f0e14ee37abcd56e1_hd.jpg" src="/asserts/images/common/loading.gif"></a>还是看这张图，我们知道这个图上画的是三维地球。但其实，它出现在你的二维电脑屏幕上，这是一张二维图。它把三维的地球表面信息压缩进二维图片，东半球和西半球重叠挤压在了一起。由于信息量挤压太大，你会发现，B点的位置在东西半球代表不同的城市，如果你和我一样是文科生，熟悉地球仪，不难发现B点在西半球位于西雅图附近，在东半球则位于我国驻马店。这时，当驻马店遇上西雅图，如果有一架飞机从驻马店飞向西雅图，你会发现，在图上，该飞机从B点飞到了C点，然后原路返回B点。在二维平面上看都是B点，但其实飞机已经换了一个半球了。同样，这是二维空间中，两个半球挤压到了一个圆圈里，两个半球共用一个圆形边缘。三维空间也行。想象两个四维空间的苹果，被挤压到了一个三维空间的苹果里面。别人看你手里拿着一个苹果，但其实这个空间里有俩！这时，在苹果深处，有一只虫子。它啃啊啃啊，啃到了表面。又啃啊啃啊，原路啃了回去。这时你看着它，以为它啃回了原路。但其实它啃进了第二个苹果！正如同两个半球共用一个圆形边缘，这两个苹果共用一个苹果表面！正如从驻马店去西雅图，必须先去边缘的C点，虫子要啃到第二个苹果里，必须先从苹果深处啃到表面再啃回去。这时候有人就会想，那既然挤压后，反正驻马店和西雅图也重合了，飞机直接不经过表面直接穿过纸面来到西雅图不行么？这不是省路了么？那个要去第二个苹果的虫子，不经过表面，就不可以啃到第二个苹果里去么？哇！恭喜你，发现了虫洞。虫洞是高一个维度的桥梁，在二维世界里，虫洞是一个三维的通道，洞口是圆形的，飞机可以从驻马店的反面直接穿过洞口来到正面的西雅图。在三维空间里，虫洞是一个四维的时空桥，洞口是三维的球，走进去再出来，就去了另一个空间。这就是为什么电影《星际穿越》里，男主的飞船冲进虫洞，看着是一个好看的球，就如同进入了隧道，出来后发现来到了另一个星系。<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="500" data-rawheight="227" class="origin_image zh-lightbox-thumb lazyload" width="500" data-original="https://pic3.zhimg.com/c30beaac2e54020839b7795f99618f99_r.jpg" data-src="https://pic3.zhimg.com/50/c30beaac2e54020839b7795f99618f99_hd.jpg" src="/asserts/images/common/loading.gif"></a>电影《星际穿越》预告片截图，里面的虫洞入口长这样。我们没见过真的虫洞，我感觉这个挺像的。但要注意，必须在时空扭曲的很厉害的情况下（比如两个半球都挤一起了），虫洞才可能建立。这时候问题来了，挤到一起的两个苹果A和B，虫子在苹果A里，啃到了表面，如果一跃跳到了苹果外面空中，那么，可以确定虫子是在A的“外面”了。可是，如果虫子啃回了苹果B的深处，外面看着似乎还在苹果A的原位，可已经换了苹果诶，这时，虫子在苹果A的外面嘛？再假设，虫子是通过一个四维虫洞从苹果A来到苹果B的，在虫洞里的时候，虫子相当于已经进入了高维空间，这算是在苹果A的外面嘛？这取决于你对“外面”的定义。所以，宇宙在更高维度的角度下，也有外面。可这个“外面”，和我们平时说的“外面”不一样。3. 宇宙外面有什么，我们不知道所以，单纯从我们三维空间的角度，宇宙没有外。讨论”宇宙外面是什么“对于我们三维空间的生物，没有意义。同样，我们也不可能讨论“时间0之前是什么？”科学不讨论这些问题，你可以把它交给宗教和信仰，罗马教皇现在就基本认同：是上帝引发了宇宙大爆炸，创造了世界。飞天面条教也许认为，时间0之前的时间线就像一根弹力十足的面条，你正在和一个丑男相亲，突然面条一拉伸，时间线变长了，于是你感到这个相亲好漫长啊，怎么也相不完。为什么科学不讨论这些？因为这些问题既不能证实，也不能证伪，那些PhD们没法用这个课题做实验，没法发论文，研究这个毕不了业。我们只能把这些问题交给神学家、或者哲学家。所以，三维空间的我们，不知道宇宙“外面”是什么。4. 宇宙外面有什么，我们可以猜刨除飞天面条教的设定，其实也可以有一些看上去很靠谱（但还是猜）的猜测。比如：平行宇宙可能我们身边就有平行宇宙。平行宇宙可能处于同一空间体系，但时间体系不同，就好像同在一条铁路线上疾驰的先后两列火车；它们有可能处于同一时间体系，但空间体系不同，就好像同时行驶在立交桥上下两层通道中的小汽车。——百度百科平行宇宙词条平行宇宙也许和我们毫无关联，我们怎样也无法相遇。可能和我们的宇宙紧紧挤在一起，共用一个三维空间，就好像两个挤在一个苹果皮下的两个苹果。又或者部分和我们宇宙重叠，另一部分彼此独立，比如下面：<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="448" data-rawheight="285" class="origin_image zh-lightbox-thumb lazyload" width="448" data-original="https://pic3.zhimg.com/c1c749ca312d2fac6f5302470fabd034_r.jpg" data-src="https://pic3.zhimg.com/50/c1c749ca312d2fac6f5302470fabd034_hd.jpg" src="/asserts/images/common/loading.gif"></a>如同两个互相穿过一部分的苹果，注意在A点附近的重叠部分不是指一个点同时处于两个苹果中，而是这是两个不同宇宙中的驻马店和西雅图，只是恰好共用一个空间点。那么，如果在A点有虫洞的话，我们可以从左边的苹果宇宙跑到右边的苹果宇宙当中去。这时候问题又来了：如果我们通过A点虫洞，从我们已知的宇宙左苹果西雅图，去到了右边苹果的驻马店，这是，我们算是在宇宙的“外面”了么？如果我们已经找到了两个宇宙的自由联通之法，我们是会把通向的地方定义为自己宇宙的一部分，还是算作宇宙的“外面”？看过了平行宇宙，再比如一个猜测：包住我们宇宙的宇宙我们都知道黑洞。掉进黑洞，就出不来。黑洞的逃逸速度超过光速，黑洞的边界也是两个世界的边界（标准的叫法是“事件视界”），你没法了解到事件视界的另一边发生了什么。黑洞里面有什么，我们也不知道，对于我们来说，由于无法证实、无法证伪，黑洞里面的世界我们没法用科学进行研究。就算，黑洞里有一个同样美好的世界，这个世界的物理定律可以和我们相同也可以相异，我们也不知道。所以影视片可以随便设定，《星际穿越》里说里面是男主女儿房间书架的后面，也不能算错，反正不能证伪。<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="988" data-rawheight="615" class="origin_image zh-lightbox-thumb lazyload" width="988" data-original="https://pic2.zhimg.com/25b259616b9431410d6ba72a4ae2a1b3_r.jpg" data-src="https://pic2.zhimg.com/50/25b259616b9431410d6ba72a4ae2a1b3_hd.jpg" src="/asserts/images/common/loading.gif"></a>《星际穿越》剧照，男主进入黑洞后，发现进入了高维空间，就在女儿书架后面。值得注意的是，这里的高维中，连时间维度都被展平，所以男主可以随意选择任何一个时间点，向前向后，不受制约地和女儿交流。这时，假设黑洞里真的有一个世界，原则上里面的人出不去。黑洞外面则是我们的宇宙，“包住”了黑洞。问题来了——你怎么知道我们不是生活在这样一个黑洞里呐？毕竟宇宙的逃逸速度也超过光速，还没有光可以由我们的宇宙散佚到外面去，所以从宇宙外真有一个包住我们宇宙的宇宙，在上一级宇宙里观测我们的宇宙，由于没有任何东西能从我们的宇宙出来，我们的宇宙看上去不就像是一个黑洞么。当然也有区别，至少我们宇宙还能给黑洞送点东西进去，但我们现在没发现宇宙外面有东西送进来嘛。问题又来，假设外面真有个包住我们的上一级宇宙，那算是我们的外面了吧。那黑洞里面也是我们抵达不了的空间，假设里面也有一个世界，算不算宇宙的“外面”呢？我们科学的边界、我们观测的边界，我们穷尽一切力量都到达不了也测量不了，所有的科学都全部失灵的地方，是不是就是“外面”呢？<br>
+补充：为什么如果有其他宇宙，性质可以和我们一样又不一样？看下一张图，再来考虑二维世界<br>
+<a href="/asserts/images/common/loading.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img data-rawwidth="343" data-rawheight="336" class="content_image lazyload" width="343" data-src="https://pic2.zhimg.com/50/5a3a7c65362d32ab34b6549b9b01cd56_hd.jpg" src="/asserts/images/common/loading.gif"></a><br>
+如图，我把两个地球套在了一起，在我们地球之外又套了一个等比例放大的无质量空心地球（就称之为“外地球”），两个地球共用一个球心。外地球和内地球相当于两个互不干涉的二维平行世界。<br>
+如果把两个地球近似看做二维世界，那么我们生活在内地球的球面上，一切物理定律都和我们现在的完全一样。我们知道：光速是30万km/s，重力加速度g大约是9.8N/kg，每千克质量的物体受到的重力是9.8牛顿。<br>
+三维空间的我们还知道，距离地球中心越远，重力加速度也越小。但这个近似二维世界里不考虑三维海拔提升的话，上面生活的人会本能地以为地球上的g全是9.8。重力加速度在内地球的二维世界里，成了一个不变的常数。<br>
+现在来看外地球，由于外地球距离地球远，同样是二维世界，他们世界里的重力加速度可能是4。于是在外地球的世界里，重力加速度等于4，也是常数。由于在三维空间里所处位置不同，不同二维世界里的基础常数，重力加速度出现了变化。（当然，纯二维世界没有向“下”的重力这么一说，他们没有“下”，这里仅作举例说明）<br>
+同样，由于我们的三维宇宙在高维空间里所处位置与其他平行宇宙不同，不同宇宙的发展阶段也不同，我们的宇宙和其他宇宙的基本常数也会不同。光速可能会不同，万有引力常数可能会不同。再比如，我们的宇宙，和一个刚刚在宇宙大爆炸中炸开几秒钟，扭曲非常严重的宇宙，圆周率都不同。</p>
+<p>综上，虽然我们真没法知道宇宙外面有什么，但是还可以快乐地猜上一猜。至此四个部分回答完毕。</p>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Tom</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://www.meetfuture.site/article/bd55ad72/">http://www.meetfuture.site/article/bd55ad72/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener">MIT</a> 许可协议。转载请注明来自 <a href="http://www.meetfuture.site">遇见未来</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/asserts/images/top/default.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/article/61cabc4b/"><img class="prev_cover lazyload" data-src="/asserts/images/top/default.png" onerror="onerror=null;src='/asserts/images/common/404.png'"><div class="label">上一篇</div><div class="prev_info"><span>关于外星人的几个常见问题</span></div></a></div><div class="next-post pull_right"><a href="/article/7df4f12f/"><img class="next_cover lazyload" data-src="/asserts/images/top/default.png" onerror="onerror=null;src='/asserts/images/common/404.png'"><div class="label">下一篇</div><div class="next_info"><span>关于‘时间’的一些理解</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'eB1xfkTiz20LUrm1S00cPjJ2-gzGzoHsz',
+  appKey:'1LzWCfE1Bkk8VUPlRK2PGGMy',
+  placeholder:'想说点什么',
+  avatar:'robohash',
+  guest_info:guest_info,
+  pageSize:'50',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Tom</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="icp"><a href="http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action" target="_blank" rel="noopener"><img class="icp-icon" src="/asserts/images/common/icp.png"><span>粤ICP备17038302号-1</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/asserts/js/snow.js"></script><script src="/asserts/js/archives.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
