@@ -1,8 +1,7 @@
 $(function () {
-    let isMain = $("#body-wrap .full_page .blogtitle").text().trim();
-    let isNotMobile = !isMobile();
-    if (isMain && isNotMobile) {
-        let html = `<div class='banner-orbit' >
+  // let isNotMobile = !isMobile(); && isNotMobile
+  if (isIndexPage()) {
+    let html = `<div class='banner-orbit' >
                         <ul class='wrapper'>
                             <div class='sun'>
                                 <div class='star'></div>
@@ -49,13 +48,13 @@ $(function () {
                             </div>
                         </ul>
                     </div>`;
-        $('#body-wrap .full_page').append(html);
-        $('.banner-orbit').click(function () {
-            if ($(this).hasClass('orbit-name')) {
-                $(this).removeClass('orbit-name');
-            } else {
-                $(this).addClass('orbit-name');
-            }
-        })
-    }
+    $('#body-wrap .full_page').append(html);
+    $('.banner-orbit').click(function () {
+      if ($(this).hasClass('orbit-name')) {
+        $(this).removeClass('orbit-name');
+      } else {
+        $(this).addClass('orbit-name');
+      }
+    })
+  }
 });
