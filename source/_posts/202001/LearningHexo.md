@@ -5,8 +5,8 @@ tags:
  - markdown
  
 categories: Hexo
-top_img: /asserts/images/202003/2020-03-11_215625.png
-cover: /asserts/images/202003/2020-03-11_215625.png
+top_img: 2020-03-11_215625.png
+cover: 2020-03-11_215625.png
 abbrlink: 2e10121f
 date: 2020-01-01 00:00:00
 keywords:
@@ -32,7 +32,7 @@ hexo clean && hexo g && hexo d
 1. hexo-abbrlink 修改文章的链接地址 :abbrlink
 1. hexo-generator-search 提供本地搜索功能
 1. hexo-renderer-markdown-it 替换原有的 markdown 功能
-1. hexo-asset-image 图片插件
+
 
 ## 新建
 ### 新建文章 

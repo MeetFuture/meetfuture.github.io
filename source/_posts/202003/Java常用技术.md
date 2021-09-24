@@ -16,8 +16,8 @@ categories: Java
 keywords: Java常用技术心得
 abbrlink: efde5af
 date: 2020-03-11 21:22:54
-top_img: /asserts/images/202003/2020-03-11_213758.png
-cover: /asserts/images/202003/2020-03-11_213758.png
+top_img: 2020-03-11_213758.png
+cover: 2020-03-11_213758.png
 description:
 ---
 

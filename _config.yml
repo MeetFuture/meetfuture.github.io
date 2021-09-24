@@ -36,7 +36,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - asserts/**
+  - pages/**
+  - js/**
+  - css/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -49,6 +51,10 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
+
 relative_link: false
 future: true
 highlight:
