@@ -10,8 +10,6 @@ comments:
 cover: 
 toc: true
 toc_number: true
-copyright: true
+copyright: false
 hide: false
-mathjax:
-katex:
 ---
